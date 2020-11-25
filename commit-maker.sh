@@ -13,7 +13,7 @@ else
 
     for (( i=0; i<$_COMMITS; i++ ))
     do  
-        echo "line $i" >> $_DUMP_FILE_NAME
+        echo "commit $i" > $_DUMP_FILE_NAME
         git add .
         git commit -m "adding line $i to file $_DUMP_FILE_NAME"
     done
